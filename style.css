@@ -1,0 +1,153 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(122,229,255);
+    background: linear-gradient(270deg, rgba(122,229,255,1) 0%, rgba(29,253,128,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    
+}
+.container {
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 800px;
+}
+
+
+.grid {
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+}
+  .grid > div {
+    padding: 10px;
+    background-color: #EFCB68;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+  }
+
+  .grid > div {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+
+
+
+  
+  /* .box {
+    padding: 10px;
+    height: 30px;
+    background-color: #ccc;
+  } */
+
+  .box {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+
+
+
+    font-size: 80px;
+
+    /* From https://css.glass */
+    background: rgba(173, 255, 114, 0.425);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 209, 255, 0.3);
+
+  }
+
+.story {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list {
+    padding-left: 0;
+    margin-top: -7px;
+}
+
+/* надпись со статусом игры */
+#mon {
+    
+}
+
+  
+
+
+.step {
+    list-style-type: none;
+    /* background-color: rgb(194, 209, 119); */
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.yellowc {
+        /* From https://css.glass */
+    background: rgba(223, 252, 0, 0.62);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.pinkc {
+    /* From https://css.glass */
+    background: rgba(255, 134, 220, 0.55);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+}
+
+.victory {
+    /* From https://css.glass */
+    background: rgba(0, 139, 252, 0.54);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
